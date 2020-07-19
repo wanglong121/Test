@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    data1:
+      username: root
+      password: tiger
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/administrators?serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    data2:
+      username: root
+      password: tiger
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/employee?serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/**/mapper/*.xml
+  configuration:
+      map-underscore-to-camel-case: true
